@@ -1,0 +1,4 @@
+auth	required	/root/pam-python-1.0.5/src/pam_python.so /root/pam-python-1.0.5/src/test.py
+account	required	/root/pam-python-1.0.5/src/pam_python.so /root/pam-python-1.0.5/src/test.py arg1 arg2
+password required	/root/pam-python-1.0.5/src/pam_python.so /root/pam-python-1.0.5/src/test.py
+session	required	/root/pam-python-1.0.5/src/pam_python.so /root/pam-python-1.0.5/src/test.py
