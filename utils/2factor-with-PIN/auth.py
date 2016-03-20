@@ -4,7 +4,7 @@ import pwd, syslog
 
 def auth_log(msg):
 	"""Send errors to default auth log"""
-	syslog.openlog(facility=syslog.LOG_AUTH)
+        '''	syslog.openlog(facility=syslog.LOG_AUTH)'''
 	syslog.syslog("IPCPU-PAM-AUTH: " + msg)
 	syslog.closelog()
 
@@ -43,8 +43,10 @@ def pam_sm_authenticate(pamh, flags, argv):
 		resp = pamh.conversation(msg)
 
 		if resp.resp == user_number:
+			auth_log("user: " + user + " login successful with PIN.")
 			return pamh.PAM_SUCCESS
 		else:
+			auth_log("user: " + user + " login failed with PIN.")
 			continue
 	return pamh.PAM_AUTH_ERR
 
