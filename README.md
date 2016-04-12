@@ -16,4 +16,6 @@ make lib
 
 找到编译后的.so文件，拷贝到/lib64/security/目录
 
+##使用
+可以参照案例 utils/2factor-with-PIN/的相关内容
 
