@@ -19,3 +19,5 @@ make lib
 ##使用
 可以参照案例 utils/2factor-with-PIN/的相关内容
 
+个人网站有详细的应用使用方法。
+http://www.ipcpu.com/2016/04/linux-pam-python/
