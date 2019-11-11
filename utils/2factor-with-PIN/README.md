@@ -7,7 +7,7 @@ usermod -c ',,555-555-5555,' youraccount
 
 you can check it in /etc/passwd
 
-##2.put pam_python.so and stampauth.py 
+##2.put pam_python.so and auth.py 
 
 put these files into directory /lib64/security/ .
 
